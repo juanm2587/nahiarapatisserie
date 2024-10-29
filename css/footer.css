@@ -1,0 +1,6 @@
+/*footer dinamico que se acomoda en la pantalla*/
+footer{
+  display:grid;
+  min-height:100dvh;
+  grid-template-rows: auto 1fr auto;
+}

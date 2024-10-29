@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!--Bootstrap y Css-->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <!--Include-html-->
+    <script src="/js/include-html.js"></script>
+    <!--Nombre de la pagina-->
+    <title>Contacto</title>
+    <link rel="icon" href="/img/logo1.png" type="image/x-icon" />
+  </head>
+
+  <body>
+    <!--Header-->
+    <div data-include="/pages/header.html"></div>
+
+    <!--Contenido-->
+    <form action="https://formspree.io/f/xkgnolao" method="POST">
+      <label for="name">Nombre*</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        placeholder="Ingresá tu nombre"
+        autocomplete="on"
+        required
+      />
+
+      <label for="email">E-mail*</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Ingresá tu e-mail"
+        autocomplete="on"
+        required
+      />
+
+      <label for="phone">Teléfono</label>
+      <input
+        type="tel"
+        name="phone"
+        id="phone"
+        placeholder="Ingresá tu teléfono"
+        autocomplete="on"
+      />
+
+      <label for="subjet">Asunto</label>
+      <input
+        type="text"
+        name="subjet"
+        id="subjet"
+        placeholder="Ingresá un asunto"
+        autocomplete="on"
+      />
+
+      <label for="message">Mensaje*</label>
+      <textarea
+        name="message"
+        id="message"
+        rows="10"
+        cols="30"
+        placeholder="Escribí tu mensaje aquí"
+        required
+      ></textarea>
+
+      <button type="submit">Enviar</button>
+      
+    </form>
+
+    <!--Footer-->
+    <div data-include="/pages/footer.html"></div>
+  </body>
+</html>

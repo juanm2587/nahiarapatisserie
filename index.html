@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--Fuentes-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <!--Bootstrap y Css-->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/index.css" />
+  <!--Include-html-->
+  <script src="/js/include-html.js"></script>
+  <!--Nombre de la pagina-->
+  <title>Home</title>
+    <link rel="icon" href="/img/logo1.png" type="image/x-icon"> 
+</head>
+
+<body>
+
+  <!--Header-->
+  <div data-include="/pages/header.html"></div>
+
+  <!--Contenido-->
+  <main>
+      <section id="prodcutos">
+        <h2>Mas vendidos</h2>
+        <img height="312.5" src="/img/elhongo1.png" alt="">
+        <img width="250" src="/img/elcoco.png" alt="">
+        <img width="250" height="312.5" src="/img/reloj.png" alt="">
+      </section>
+      <section>
+        <h2>Escultura del Mes</h2>
+        <video width="250" controls loading="lazy">
+          <source src="/img/videoplayback.mp4">
+                <track src="subtitulo.vtt" label="Español" default>
+        </video>
+      </section>
+  </main>
+  
+   <!--Footer-->
+  <div data-include="/pages/footer.html"></div>
+</body>
+
+</html>
