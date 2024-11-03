@@ -1,6 +1,27 @@
 /*footer dinamico que se acomoda en la pantalla*/
-footer{
+/*footer{
   display:grid;
   min-height:100dvh;
   grid-template-rows: auto 1fr auto;
+}
+.redes{
+  list-style: none;
+  text-decoration: none;
+}
+  */
+:root {
+  --color-beige-claro: #e5e3dc;
+  --color-beige: #b1a793;
+  --color-beige-transp: #f5f3f1;
+  --color-beige-oscuro: #8b7d67;
+  --color-beige-oscuro-transp: #a29680;
+  --color-texto-oscuro: #29211f;
+  --color-texto-claro: #f7f6f5;
+  --font-playfair: "Playfair Display", serif;
+  --font-sans: "sans-serif";
+}
+.footer__area,
+a {
+  background-color: var(--color-beige-oscuro);
+  color: var(--color-texto-oscuro);
 }

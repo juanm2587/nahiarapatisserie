@@ -1,13 +1,36 @@
-<!--Encabezado de la pagina-->
-<header id="inicio">
+<!-- ---------------CDN de Bootstrap Icons--------------- -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+/>
+
+<link rel="stylesheet" href="/css/header.css" />
+
+<!-- ---------------Encabezado de la pagina--------------- -->
+<header claas="header">
   <img src="/img/logo1.png" width="100" alt="Logo" />
-  <h1>Bienvenido al carrito de Compra</h1>
 </header>
-<!--Navbar / Barra de menu-->
-<nav>
-  <ul>
+<!-- ---------------Navbar / Barra de menu--------------- -->
+<nav class="header__nav">
+  
+  <h1>Nahiara's Patisserie</h1>
+  <ul class="nav-list">
     <li><a href="/index.html">Inicio</a></li>
     <li><a href="/pages/productos.html">Productos</a></li>
     <li><a href="/pages/contacto.html">Contacto</a></li>
   </ul>
+  <div class="header__nav-icons">
+    <button class="btn__icon" aria-label="buscar en la tienda">
+      <i class="bi bi-search bi-hover"></i>
+    </button>
+    <button class="btn__icon" aria-label="ver mis favoritos">
+      <i class="bi bi-heart bi-hover"></i>
+    </button>
+    <button class="btn__icon" aria-label="mi cuenta">
+      <i class="bi bi-person bi-hover"></i>
+    </button>
+    <button class="btn__icon" aria-label="mi bolsa">
+      <i class="bi bi-bag bi-hover"></i>
+    </button>
+  </div>
 </nav>

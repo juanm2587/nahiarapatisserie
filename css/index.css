@@ -1,0 +1,102 @@
+/* VARIABLES EN CSS */
+:root {
+  --color-beige-claro: #e5e3dc;
+  --color-beige: #b1a793;
+  --color-beige-transp: #f5f3f1;
+  --color-beige-oscuro: #8b7d67;
+  --color-beige-oscuro-transp: #a29680;
+  --color-texto-oscuro: #29211f;
+  --color-texto-claro: #f7f6f5;
+  --font-playfair: "Playfair Display", serif;
+  --font-sans: "sans-serif";
+}
+
+/* RESET*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* box-sizing sirve para que el contenido no se desborde de las cajas */
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* 1 rem = 10 px*/
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+/* ---------------Fuentes y Estilos--------------- */
+body {
+  font-size: 1.6rem;
+  line-height: 2;
+}
+h1,
+h2 {
+  font-family: "Playfair Display", serif;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+h2 {
+  font-size: 2.7rem;
+}
+p {
+  font-size: 1.25rem;
+}
+
+ul,
+li,
+a {
+  list-style: none;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+/* ---------------Formulario y Estilos--------------- */
+
+label {
+  font-family: var(--font-sans);
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: var(--color-texto-oscuro);
+}
+
+input {
+  background-color: var(--color-blanco);
+  border: 2px solid var(--color-beige);
+  width: 100%;
+  height: 3rem;
+  padding: 0.5rem;
+  outline: none;
+  font-family: var(--font-sans);
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: var(--color-texto-oscuro);
+}
+
+input:focus,
+textarea:focus {
+  border: 2px solid var(--color-negro);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--color-beige);
+}
+
+textarea {
+  background-color: var(--color-blanco);
+  border: 2px solid var(--color-beige);
+  width: 100%;
+  height: 9rem;
+  padding: 0.5rem;
+  outline: none;
+  font-family: var(--font-sans);
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: var(--color-texto-oscuro);
+  resize: none;
+}

@@ -1,0 +1,33 @@
+:root {
+  --color-beige-claro: #e5e3dc;
+  --color-beige: #b1a793;
+  --color-beige-transp: #f5f3f1;
+  --color-beige-oscuro: #8b7d67;
+  --color-beige-oscuro-transp: #a29680;
+  --color-texto-oscuro: #29211f;
+  --color-texto-claro: #f7f6f5;
+  --font-playfair: "Playfair Display", serif;git
+  --font-sans: "sans-serif";
+}
+.header__nav {
+  background-color: var(--color-beige-oscuro);
+  color: var(--color-texto-oscuro);
+  width: 100%;
+  height: 6.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  list-style: none;
+  text-decoration: none;
+}
+.nav-list a {
+  color: var(--color-texto-oscuro);
+}
