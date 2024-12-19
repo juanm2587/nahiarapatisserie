@@ -8,11 +8,11 @@
 
 <!-- ---------------Encabezado de la pagina--------------- -->
 <header claas="header">
-  <img src="/img/logo1.png" width="100" alt="Logo" />
-</header>
-<!-- ---------------Navbar / Barra de menu--------------- -->
-<nav class="header__nav">
   
+
+<!-- ---------------Navbar / Barra de menu--------------- -->
+<!-- <nav class="header__nav">
+  <img src="/img/logo1.png" width="100" alt="Logo" />
   <h1>Nahiara's Patisserie</h1>
   <ul class="nav-list">
     <li><a href="/index.html">Inicio</a></li>
@@ -33,4 +33,31 @@
       <i class="bi bi-bag bi-hover"></i>
     </button>
   </div>
+</nav> -->
+
+<!-- ---------------Fin del Navbar--------------- -->
+<!-- Barra de Navegación -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container-fluid">
+    <!-- Logo -->
+    <a class="navbar-brand logo-container d-lg-flex align-items-center" href="/index.html">
+      <img src="/img/logo1.png" alt="Logo Nahiara's Patisserie" class="img-fluid">
+      <span class="d-none d-lg-inline fs-2 fw-bold ms-2">Nahiara's Patisserie</span>
+    </a>
+
+    <!-- Botón hamburguesa -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navegacion">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Contenido del menú -->
+    <div id="navegacion" class="collapse navbar-collapse">
+      <nav class="navbar-nav container text-center d-flex flex-md-row flex-sd-row justify-content-md-between justify-content-lg-end">
+        <a class="text-black text-decoration-none" href="/index.html">Inicio</a>
+        <a class="text-black text-decoration-none" href="/pages/productos.html">Productos</a>
+        <a class="text-black text-decoration-none" href="/pages/contacto.html">Contacto</a>
+      </nav>
+    </div>
+  </div>
 </nav>
+</header>

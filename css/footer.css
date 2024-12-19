@@ -20,8 +20,13 @@
   --font-playfair: "Playfair Display", serif;
   --font-sans: "sans-serif";
 }
-.footer__area,
 a {
-  background-color: var(--color-beige-oscuro);
+  background-color: var(--color-beige-claro);
+  color: var(--color-texto-oscuro);
+}
+#color-footer{
+  background-color: var(--color-beige-claro);
+}
+footer{
   color: var(--color-texto-oscuro);
 }

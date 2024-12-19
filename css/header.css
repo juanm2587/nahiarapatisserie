@@ -6,10 +6,10 @@
   --color-beige-oscuro-transp: #a29680;
   --color-texto-oscuro: #29211f;
   --color-texto-claro: #f7f6f5;
-  --font-playfair: "Playfair Display", serif;git
+  --font-playfair: "Playfair Display", serif;
   --font-sans: "sans-serif";
 }
-.header__nav {
+/*.header__nav {
   background-color: var(--color-beige-oscuro);
   color: var(--color-texto-oscuro);
   width: 100%;
@@ -30,4 +30,39 @@
 }
 .nav-list a {
   color: var(--color-texto-oscuro);
+}*/
+
+/* Imagen alineada a la izquierda por defecto (1440x900 o superior) */
+.logo-container {
+  justify-content: flex-start; /* Alinea el logo a la izquierda */
+}
+
+.logo-container img {
+  max-height: 80px; /* Ajusta la altura máxima del logo */
+}
+a.logo-container{
+  font-family: var(--font-playfair);
+}
+/* Centrar el logo en pantallas pequeñas (768x1024 o menores) */
+@media (max-width: 1024px) {
+  .logo-container {
+    justify-content: center; /* Centra el logo horizontalmente */
+    flex-direction: column; /* Apila el logo y el texto si es necesario */
+    text-align: center; /* Asegura el centrado del texto */
+    width: 100%; /* Ocupa el ancho completo */
+     .navbar-brand span {
+    font-size: 1.5rem; /* Tamaño fijo del texto */
+    line-height: 1.2;  /* Ajustar el interlineado si es necesario */
+  }
+  }
+
+  .logo-container img {
+    max-height: 80px; /* Ajusta el tamaño del logo para pantallas pequeñas */
+
+  }
+
+  .navbar-brand span {
+    display: block; /* Muestra el texto del logo debajo de la imagen */
+    margin-top: 10px; /* Espaciado entre la imagen y el texto */
+  }
 }
