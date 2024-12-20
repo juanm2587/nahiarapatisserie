@@ -100,3 +100,44 @@ textarea {
   color: var(--color-texto-oscuro);
   resize: none;
 }
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Espacio entre las tarjetas */
+}
+
+.card {
+  background-color: #f9f9f9;
+  border: 1px solid var(--color-beige-oscuro);
+  border-radius: 8px;
+  overflow: hidden;
+  width: 250px; /* Ancho fijo para las tarjetas */
+  box-shadow: 0 2px 5px var(--color-beige-claro);
+  text-align: center;
+  transition: transform 0.3s ease; 
+}
+.card:hover {
+  transform: scale(1.05); /* Aumentar el tamaño de la tarjeta al pasar el mouse */
+}
+
+.card img, .card video {
+  width: 100%; /* Hacer que la imagen/video ocupe todo el ancho de la tarjeta */
+  height: auto; /* Mantener la proporción de la imagen/video */
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 100%; /* Hacer que las tarjetas ocupen el 100% en pantallas pequeñas */
+  }
+}

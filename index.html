@@ -17,7 +17,7 @@
     <!-- ---------------Include-html--------------- -->
     <script src="/js/include-html.js"></script>
     <!-- ---------------Nombre de la pagina--------------- -->
-    <title>Home</title>
+    <title>Inicio</title>
     <link rel="icon" href="/img/logo1.png" type="image/x-icon" />
   </head>
 
@@ -27,24 +27,36 @@
 
     <!-- ---------------Contenido--------------- -->
     <main>
-      <section id="prodcutos">
-        <h2>Mas vendidos</h2>
-        <img height="312.5" src="/img/hongo.jpg" alt="" />
-        <img width="250" src="/img/coco.jpg" alt="" />
-        <img width="250" height="312.5" src="/img/reloj.png" alt="" />
-      </section>
-      <section>
-        <h2>Escultura del Mes</h2>
-        <video width="250" controls loading="lazy">
-          <source src="/img/videoplayback.mp4" />
-          <track src="subtitulo.vtt" label="Español" default />
-        </video>
-      </section>
-      <section>
-        <h2></h2>
-        <img src="/img/postres00.jpeg" alt="Variedades" />
-      </section>
-    </main>
+  <section id="productos">
+    <h2>Más vendidos</h2>
+    <div class="card-container">
+      <div class="card">
+        <img height="312.5" src="/img/hongo.jpg" alt="Hongo" />
+      </div>
+      <div class="card">
+        <img width="250" src="/img/coco.jpg" alt="Coco" />
+      </div>
+      <div class="card">
+        <img width="250" height="312.5" src="/img/reloj.png" alt="Reloj" />
+      </div>
+    </div>
+  </section>
+  <section>
+    <h2>Escultura del Mes</h2>
+    <div class="card">
+      <video width="250" controls loading="lazy">
+        <source src="/img/videoplayback.mp4" />
+        <track src="subtitulo.vtt" label="Español" default />
+      </video>
+    </div>
+  </section>
+  <section>
+    <h2>Postres</h2>
+    <div class="card">
+      <img src="/img/postres00.jpeg" alt="Variedades" />
+    </div>
+  </section>
+</main>
 
     <!-- ---------------Footer--------------- -->
     <div data-include="/pages/footer.html"></div>
