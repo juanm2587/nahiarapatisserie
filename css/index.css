@@ -141,3 +141,22 @@ h2 {
     width: 100%; /* Hacer que las tarjetas ocupen el 100% en pantallas pequeñas */
   }
 }
+.contenido {
+  display: flex;
+  align-items: center; /* Centra verticalmente las reseñas e imagen */
+  justify-content: space-between; /* Espacio entre la imagen y las reseñas */
+}
+
+.imagen img {
+  max-width: 100%; /* Ajusta el tamaño de la imagen según el contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+  margin-right: 20px; /* Espacio entre la imagen y las reseñas */
+}
+
+.resenias {
+  max-width: 60%; /* Limita el ancho de las reseñas para que no se expandan demasiado */
+}
+
+h2 {
+  text-align: center; /* Centra el título */
+}
