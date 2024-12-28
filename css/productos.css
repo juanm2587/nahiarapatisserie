@@ -1,7 +1,3 @@
-
-
-
-
 .card-container {
   display: flex;
   flex-wrap: wrap; /* Permite ajustar tarjetas en filas */
@@ -69,6 +65,7 @@
   background-color: var(--color-beige-claro);
 }
 
+
 /* ---------------- Media Queries ---------------- */
 
 /* Para resoluciones 768x1024 y 1440x900 */
@@ -100,6 +97,31 @@
     width: calc(33.33% - 10px); /* Tres tarjetas por fila (33.33% del ancho, con margen) */
   }
 }
+.card-carrito {
+  grid-column: span 3; /* Ocupa tres columnas */
+  background-color: #f9f9f9;
+  border: 1px solid var(--color-beige-oscuro);
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%; /* Se asegura que ocupe todo el ancho disponible */
+  box-shadow: 0 2px 5px var(--color-beige-claro);
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .card-carrito {
+    grid-column: span 3;
+  }
+}
+
+@media (max-width: 767px) {
+  .card-carrito {
+    grid-column: span 1; /* Ocupa solo una columna en pantallas pequeñas */
+  }
+}
+
 
 /* Para pantallas más pequeñas (menos de 768px) */
 @media (max-width: 767px) {

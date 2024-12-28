@@ -55,7 +55,7 @@ const productos = [
     nombre: "Postres",
     descripcion: "Postres variados, ideales para todos.",
     imagen: "/img/postres_001.png",
-    precio: 12.0,
+    precio: 54.0,
   },
 ];
 
